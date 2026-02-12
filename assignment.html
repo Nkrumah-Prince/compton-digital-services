@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignments – Compton Digital Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Assignments Service</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Assignments</h2>
+  <p>We offer professional guidance for Normal, Practical, and Project assignments.</p>
+  <ul>
+    <li>Normal – GHS20</li>
+    <li>Practical – GHS25</li>
+    <li>Project – GHS70</li>
+  </ul>
+
+  <h3>Payment</h3>
+  <p>Send MTN MoMo payment to 233550520858 before booking.</p>
+
+  <form id="assignmentForm" onsubmit="event.preventDefault(); sendBooking('assignmentForm','Assignment',document.getElementById('assignmentType').value=='Normal'?20:document.getElementById('assignmentType').value=='Practical'?25:70);">
+    <label>Full Name<input type="text" name="name" required></label>
+    <label>Contact Number<input type="text" name="contact" required></label>
+    <label>Assignment Type
+      <select name="assignmentType" id="assignmentType" required>
+        <option value="">Select type</option>
+        <option value="Normal">Normal</option>
+        <option value="Practical">Practical</option>
+        <option value="Project">Project</option>
+      </select>
+    </label>
+    <label>Details<textarea name="details" rows="4" required></textarea></label>
+    <button type="submit">Book via WhatsApp</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2026 Compton Digital Services</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
