@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Writing – Compton Digital Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CV Writing Service</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Professional CV Writing</h2>
+  <p>Get modern, ATS-friendly CVs that stand out.</p>
+  <p>Price: GHS20</p>
+  <p>Payment: MTN MoMo 233550520858 before booking</p>
+
+  <form id="cvForm" onsubmit="event.preventDefault(); sendBooking('cvForm','CV Writing',20);">
+    <label>Full Name<input type="text" name="name" required></label>
+    <label>Contact Number<input type="text" name="contact" required></label>
+    <label>Details<textarea name="details" rows="4" placeholder="Your experience, education" required></textarea></label>
+    <button type="submit">Book via WhatsApp</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2026 Compton Digital Services</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
