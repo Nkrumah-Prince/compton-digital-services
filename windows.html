@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Windows Installation – Compton Digital Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Windows Installation Service</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Windows Installation</h2>
+  <p>We install Windows 10 / 11, setup drivers & updates professionally.</p>
+  <p>Price: GHS100</p>
+  <p>Payment: MTN MoMo 233550520858 before booking</p>
+
+  <form id="windowsForm" onsubmit="event.preventDefault(); sendBooking('windowsForm','Windows Installation',100);">
+    <label>Full Name<input type="text" name="name" required></label>
+    <label>Contact Number<input type="text" name="contact" required></label>
+    <label>Details<textarea name="details" rows="4" placeholder="Computer specs, preferred Windows version" required></textarea></label>
+    <button type="submit">Book via WhatsApp</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2026 Compton Digital Services</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
